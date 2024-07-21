@@ -1,4 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import mainImg from './assets/pic/photo-1510519138101-570d1dca3d66.png'
+import tree from './assets/pic/treeToMove.png'
+import clock from './assets/pic/desk-clk.png'
+import mobileImg from './assets/pic/Deep-Purple-iPhone-14-Stock-Pro-Wallpaper-iphone-11-pro.jpg'
+import treeAudio from './assets/audio/bushmovement-6986.mp3'
+import clockAudio from './assets/audio/telephone-ringwav-14674.mp3'
+import lightAudio from './assets/audio/noisy-switch-166327.mp3'
+import keyAudio from './assets/audio/quick-mechanical-keyboard-14391.mp3'
+import mouseSound from './assets/audio/mouse-click-153941.mp3'
+import kamlaSound from './assets/audio/indian-gungroos-ankle-bells-improv-18351_BBXG5oc7.mp3'
 import './App.css';
 
 const DeskComponent = () => {
@@ -100,40 +110,40 @@ const DeskComponent = () => {
 
   return (
     <div className="main">
-      <img src="/src/assets/pic/photo-1510519138101-570d1dca3d66.png" alt="main" className="mainImg" />
+      <img src={mainImg} alt="main" className="mainImg" />
       <div className="elements">
 
         {/* Tree */}
         <div className="tree">
-          <img src="/src/assets/pic/treeToMove.png" alt="" className="treeImg1" onClick={handleTreeAnimation} />
-          <img src="/src/assets/pic/treeToMove.png" alt="" className="treeImg2" onClick={handleTreeAnimation} />
-          <audio src="/src/assets/audio/bushmovement-6986.mp3" className="treeSound"></audio>
+          <img src={tree} alt="" className="treeImg1" onClick={handleTreeAnimation} />
+          <img src={tree} alt="" className="treeImg2" onClick={handleTreeAnimation} />
+          <audio src={treeAudio} className="treeSound"></audio>
         </div>
 
         {/* Clock */}
         <div className="clockDiv" onClick={handleAlarm}>
-          <img src="/src/assets/pic/desk-clk.png" alt="desk-clock" className="clock" />
+          <img src={clock} alt="desk-clock" className="clock" />
           <div className="hands hour_hand"></div>
           <div className="hands minute_hand"></div>
           <div className="hands second_hand"></div>
-          <audio src="/src/assets/audio/telephone-ringwav-14674.mp3" className="alarmClock"></audio>
+          <audio src={clockAudio} className="alarmClock"></audio>
         </div>
 
         {/* Light */}
         <div className="lightBtn" onClick={handleLight}></div>
-        <audio src="/src/assets/audio/noisy-switch-166327.mp3" className="lightSwitch"></audio>
+        <audio src={lightAudio} className="lightSwitch"></audio>
 
         {/* Keyboard */}
         <div className="keyboard" onClick={handleKeyboard}></div>
-        <audio src="/src/assets/audio/quick-mechanical-keyboard-14391.mp3" className="typeAudio"></audio>
+        <audio src={keyAudio} className="typeAudio"></audio>
 
         {/* Mouse */}
         <div className="mouse" onClick={handleMouse}></div>
-        <audio src="/src/assets/audio/mouse-click-153941.mp3" className="mouseAudio"></audio>
+        <audio src={mouseSound} className="mouseAudio"></audio>
 
         {/* Mobile */}
         <div className="mobile" onClick={handleMobile} onAnimationEnd={handleMobileAnimationEnd}>
-          <img src="/src/assets/pic/Deep-Purple-iPhone-14-Stock-Pro-Wallpaper-iphone-11-pro.jpg" alt="" className="mobileImg" />
+          <img src={mobileImg} alt="" className="mobileImg" />
           <div className="mobileTime">
             <span></span>
             <span></span>
@@ -142,7 +152,7 @@ const DeskComponent = () => {
 
         {/* Computer */}
         <div className="computer" onClick={handleKamla}></div>
-        <audio src="/src/assets/audio/indian-gungroos-ankle-bells-improv-18351_BBXG5oc7.mp3" className="sound"></audio>
+        <audio src={kamlaSound} className="sound"></audio>
 
       </div>
     </div>
