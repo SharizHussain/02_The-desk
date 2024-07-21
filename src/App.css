@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  position: relative;
+  height: 50.7vw;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mainImg{
+  position: absolute;
+  height: 50.7vw;
+  width: 100vw;
+  z-index: -1;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.elements{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}
+
+.tree{
+  position: relative;
+}
+.treeImg1{
+  position: absolute;
+  height: 40vw;
+  width: 20vw;
+  object-fit: cover;
+  margin: 9vw 0 0 5vw;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: rotate(8deg);
+}
+.treeImg2{
+  position: absolute;
+  height: 40vw;
+  width: 20vw;
+  object-fit: cover;
+  /* background-color: green; */
+  margin: 10vw 0 0 2vw;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: rotate(-3deg);
+}
+.tree1Animation{
+  animation: treeMove1 1.3s ease-out;
+}
+@keyframes treeMove1 {
+  0%{
+      transform: rotate(8deg);
+  }
+  20%{
+      transform: rotate(12deg);
+  }
+  40%{
+      transform: rotate(1deg);
+  }
+  60%{
+      transform: rotate(8deg);
+  }
+  80%{
+      transform: rotate(3deg);
+  }
+  100%{
+      transform: rotate(8deg);
+  }
+}
+.tree2Animation{
+  animation: treeMove2 1.3s ease-out;
+}
+@keyframes treeMove2 {
+  0%{
+      transform: rotate(-3deg);
+  }
+  20%{
+      transform: rotate(-8deg);
+  }
+  40%{
+      transform: rotate(4deg);
+  }
+  60%{
+      transform: rotate(-5deg);
+  }
+  80%{
+      transform: rotate(2deg);
+  }
+  100%{
+      transform: rotate(-3deg);
+  }
+}
+
+.clockDiv{
+  position: relative;
+  height: 10vw;
+  width: 10vw;
+  z-index: 111;
+  /* background-color: red; */
+  margin: 20vw 0 0 37vw;
+}
+.clock{
+  position: absolute;
+  width: 10vw;
+}
+
+.hands{
+  position: absolute;
+  background-color: black;
+  margin: 4.8vw 0 0 4.7vw;
+  transform-origin: bottom;
+}
+.hour_hand{
+  height: 1.5vw;  
+  width: 4px;
+}
+.minute_hand{
+  height: 1.75vw;
+  width: 2px;
+  margin-top: 4.6vw !important;
+}
+.second_hand{
+  background-color: rgb(83, 3, 3);
+  height: 1.5vw;
+  width: 1.5px;
+}
+
+.lightBtn{
+  position: absolute;
+  height: 5.5vw;
+  width: 7.5vw;
+  /* background-color: lightblue; */
+  margin: -10.5vw 0 0 49vw;
+}
+
+.lightOff{
+  filter: brightness(8%);
+}
+
+.keyboard{
+  position: absolute;
+  z-index: 10;
+  width: 15.5vw;
+  height: 5vw;
+  transform: rotate(20deg);
+  /* background-color: greenyellow; */
+  margin: 4.4vw 0 0 57.7vw;
+}
+
+.mouse{
+  position: absolute;
+  z-index: 10;
+  height: 4vw;
+  width: 4.4vw;
+  transform: rotate(-45deg);
+  /* background-color: lightblue; */
+  margin: 5.9vw 0 0 80vw;
+}
+
+.mobile{
+  position: absolute;
+  height: 6vw;
+  width: 2.5vw;
+  margin: 11.5vw 0 0 91.9vw;
+  transform-origin: bottom;
+  transform: rotateZ(49deg) rotateX(40deg) skewY(-38deg);
+  opacity: 0;
+}
+.mobileImg{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  border-radius: 4px;
+}
+.mobileTime{
+  cursor: default;
+  position: absolute;
+  z-index: 10;
+  font-size: 1.05vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5vw 0 0 0.6vw;
+  text-align: center;
+}
+.mobileToggle{
+  animation: mobileOn 5s linear;    
+}
+@keyframes mobileOn {
+  0%{
+      opacity: 0;
+  }
+  8%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+}
+
+.computer{
+  height: 13.5vw;
+  width: 22vw;
+  margin: -14.8vw 0 0 67.5vw;
+  transform: rotate(10deg) rotateX(-10deg) skewX(1deg) skewY(5deg);
+  transform-origin: right;
+}
+
+.kamla{
+  animation: kamlaAni 15s linear forwards;
+}
+@keyframes kamlaAni {
+  0%{
+      filter: brightness(5%);
+  }
+  25%{
+      filter: brightness(30%);
+  }   
+  30%{
+      filter: brightness(10%);
+  }
+  35%{
+      filter: brightness(30%);
+  }
+  40%{
+      filter: brightness(10%);
+  }
+  45%{
+      filter: brightness(30%);
+  }
+  50%{
+      filter: brightness(10%);
+  }
+  55%{
+      filter: brightness(30%);
+  }
+  60%{
+      filter: brightness(10%);
+  }
+  80%{
+      filter: brightness(30%);
+  }
+  85%{
+      filter: brightness(10%)
+  }
+  90%{
+      filter: brightness(15%)
+  }
+  95%{
+      filter: brightness(10%);
+  }
+  100%{
+      filter: brightness(5%);
+  }
+}
