@@ -3,17 +3,20 @@ import mainImg from './assets/pic/photo-1510519138101-570d1dca3d66.png'
 import tree from './assets/pic/treeToMove.png'
 import clock from './assets/pic/desk-clk.png'
 import mobileImg from './assets/pic/Deep-Purple-iPhone-14-Stock-Pro-Wallpaper-iphone-11-pro.jpg'
+import kamlaImg from './assets/pic/pic.png';
 import treeAudio from './assets/audio/bushmovement-6986.mp3'
 import clockAudio from './assets/audio/telephone-ringwav-14674.mp3'
 import lightAudio from './assets/audio/noisy-switch-166327.mp3'
 import keyAudio from './assets/audio/quick-mechanical-keyboard-14391.mp3'
 import mouseSound from './assets/audio/mouse-click-153941.mp3'
 import kamlaSound from './assets/audio/indian-gungroos-ankle-bells-improv-18351_BBXG5oc7.mp3'
+import kamlaScream from './assets/audio/Best Scream 😱 Sound Effects - Female, Male, Zombie, Horror Screams And Shrieks (mp3cut (mp3cut.net).mp3'
 import './App.css';
 
 const DeskComponent = () => {
   const [timer, setTimer] = useState(0);
   const [kamlaRun, setKamlaRun] = useState(false);
+  const [treeCondition, setTreeCondition] = useState(true)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -74,12 +77,13 @@ const DeskComponent = () => {
     const mobile = document.querySelector('.mobile');
     mobile.classList.add('mobileToggle');
   };
-
+  
   const handleMobileAnimationEnd = () => {
     const mobile = document.querySelector('.mobile');
     mobile.classList.remove('mobileToggle');
   };
-
+  
+  const kamlaCome = document.querySelector('.kamlaImg')
   const handleKamla = () => {
     if (!kamlaRun) {
       document.querySelector('.mainImg').classList.add('kamla');
@@ -87,25 +91,34 @@ const DeskComponent = () => {
       document.querySelector('.clockDiv').classList.add('kamla');
       document.querySelector('.sound').play();
       document.querySelector('.sound').loop = false;
+      
+      setTimeout(() => {
+        kamlaCome.style.marginTop = "-1vw"
+        document.querySelector('.kamlaScream').play();
+      }, 15000);
       setKamlaRun(true);
     }
   };
 
   const handleTreeAnimation = () => {
-    const treeToMove1 = document.querySelector('.treeImg1');
-    const treeToMove2 = document.querySelector('.treeImg2');
-    const treeSound = document.querySelector('.treeSound');
-
-    treeToMove1.classList.add('tree1Animation');
-    treeToMove2.classList.add('tree2Animation');
-
-    treeSound.currentTime = 0;
-    treeSound.play();
-
-    treeToMove2.addEventListener('animationend', (e) => {
-      e.target.classList.remove('tree2Animation');
-      treeToMove1.classList.remove('tree1Animation');
-    });
+    if(treeCondition){
+      setTreeCondition(false)
+      const treeToMove1 = document.querySelector('.treeImg1');
+      const treeToMove2 = document.querySelector('.treeImg2');
+      const treeSound = document.querySelector('.treeSound');
+      
+      treeToMove1.classList.add('tree1Animation');
+      treeToMove2.classList.add('tree2Animation');
+      
+      treeSound.currentTime = 0;
+      treeSound.play();
+      
+      treeToMove2.addEventListener('animationend', (e) => {
+        e.target.classList.remove('tree2Animation');
+        treeToMove1.classList.remove('tree1Animation');
+        setTreeCondition(true)
+      });
+    }
   };
 
   return (
@@ -153,8 +166,10 @@ const DeskComponent = () => {
         {/* Computer */}
         <div className="computer" onClick={handleKamla}></div>
         <audio src={kamlaSound} className="sound"></audio>
+        <audio src={kamlaScream} className='kamlaScream'></audio>
 
       </div>
+        <img src={kamlaImg} alt="" className='kamlaImg'/>
     </div>
   );
 };

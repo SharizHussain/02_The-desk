@@ -219,45 +219,72 @@
 }
 @keyframes kamlaAni {
   0%{
-      filter: brightness(5%);
+      filter: brightness(80%);
   }
-  25%{
-      filter: brightness(30%);
+  20%{
+      filter: brightness(10%);
   }   
   30%{
-      filter: brightness(10%);
+      filter: brightness(30%);
   }
   35%{
-      filter: brightness(30%);
+      filter: brightness(10%);
   }
   40%{
-      filter: brightness(10%);
+      filter: brightness(30%);
   }
   45%{
-      filter: brightness(30%);
+      filter: brightness(10%);
   }
   50%{
-      filter: brightness(10%);
+      filter: brightness(30%);
   }
   55%{
-      filter: brightness(30%);
+      filter: brightness(10%);
   }
   60%{
-      filter: brightness(10%);
-  }
-  80%{
       filter: brightness(30%);
   }
-  85%{
-      filter: brightness(10%)
-  }
-  90%{
-      filter: brightness(15%)
-  }
-  95%{
+  70%{
       filter: brightness(10%);
   }
-  100%{
-      filter: brightness(5%);
+  73%{
+      filter: brightness(30%)
   }
+  76%{
+      filter: brightness(10%)
+  }
+  79%{
+      filter: brightness(30%);
+  }
+  83%{
+      filter: brightness(10%);
+  }
+  86%{
+    filter: brightness(30%);
+  }
+  89%{
+    filter: brightness(5%);
+  }
+  92%{
+    filter: brightness(15%);
+  }
+  95%{
+    filter: brightness(5%);
+  }
+  97%{
+    filter: brightness(10%);
+  }
+  100%{
+    filter: brightness(8%);
+  }
+}
+
+.kamlaImg{
+  position: absolute;
+  z-index: 1100;
+  width: 50vw;
+  margin-top: 60vw;
+  margin-left: 25vw;
+  transform: rotate(-20deg);
 }
