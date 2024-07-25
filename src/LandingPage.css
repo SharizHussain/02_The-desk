@@ -12,7 +12,7 @@
     object-fit: cover;
     object-position: bottom;
 }
-@media (max-width:768px) {
+@media (max-width:600px) {
     .gameImg{
         object-position: 90%;
     }
@@ -26,13 +26,12 @@
     h1{
         color: rgb(53, 52, 52);
     }
-
-    @media (max-width:768px) and (min-width:450px) {
+}
+    @media (max-width:1000px) and (min-width:600px) {
         section{
-            font-size: 2vw !important;
+            font-size: 2.2vw !important;
         }
     }
-}
 
 .suggestion{
     position: absolute;
