@@ -16,6 +16,9 @@
     .gameImg{
         object-position: 90%;
     }
+    .blur{
+        height: 90% !important;
+    }
     .suggestion{
         display: flex !important;
         justify-content: center;
@@ -32,6 +35,9 @@
         section{
             font-size: 2.2vw !important;
         }
+        .blur{
+            height: 100% !important;
+        }
         .note{
             width: 65%;
             margin: 3.4vw 0 0 22vw !important;
@@ -42,7 +48,7 @@
 .suggestion{
     position: absolute;
     display: none;
-    margin: -11.5vh 0 0 0;
+    margin: -22vw 0 0 0;
     color: snow;
     width: 100%;
     animation: suggest 1.5s linear infinite;
@@ -61,7 +67,7 @@
 
 .blur{
     position: absolute;
-    height: 85vh;   
+    height: 85%;   
     width: 70vw;
     border-radius: 40px;
     border: 1px solid black;
