@@ -39,6 +39,8 @@ export default function LandingPage({ landingToggleFun }) {
                                     <button className='start' onClick={startGame}>START</button>
                                     <button className='manual' onClick={manualShow}>MANUAL</button>
                                 </div>
+
+                                <div className='suggestion'><span>Rotate to Horizontal</span></div>
                             </>
                             :
                             <div className='manualPage'>
@@ -65,6 +67,8 @@ export default function LandingPage({ landingToggleFun }) {
                                         </ul>
                                     </section>
                                 </div>
+                                
+                                <div className='suggestion'>Rotate to Horizontal</div>
                             </div>
                     }
                 </div>

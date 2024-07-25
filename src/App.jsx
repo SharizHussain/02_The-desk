@@ -30,7 +30,7 @@ const DeskComponent = () => {
     setLandingToggle(false)
     setTimeout(() => {
       document.querySelector('.loading').style.display = "none"
-    }, 1000);
+    }, 2000);
   }
 
   useEffect(() => {
@@ -122,7 +122,8 @@ const DeskComponent = () => {
       }, 13000);
 
       setTimeout(() => {
-        kamlaCome.style.marginTop = "-1vw"
+        kamlaCome.style.marginTop = "-1vw";
+        kamlaCome.classList.add('animateKamla');
         document.querySelector('.kamlaScream').play();
       }, 15000);
     }

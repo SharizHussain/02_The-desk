@@ -12,6 +12,22 @@
     object-fit: cover;
     object-position: bottom;
 }
+@media (max-width:600px) {
+    .gameImg{
+        object-position: 90%;
+    }
+    .suggestion{
+        display: flex !important;
+        justify-content: center;
+    }
+}
+
+.suggestion{
+    position: absolute;
+    display: none;
+    margin: -28vh 0 0 0;
+    width: 100%;
+}
 
 .blur{
     position: absolute;
@@ -64,7 +80,7 @@ h1{
 .start{
     border-radius: 20px;
     height: 6vh;
-    width: 15vw;
+    width: 15vmax;
     margin: 18vh 0 0 0;
     background-color: transparent;
     cursor: pointer;
@@ -74,7 +90,7 @@ h1{
 .manual{
     border-radius: 20px;
     height: 6vh;
-    width: 15vw;
+    width: 15vmax;
     margin: 2.5vh 0 0 0;
     background-color: transparent;
     cursor: pointer;

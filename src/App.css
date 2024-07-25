@@ -346,7 +346,31 @@
   width: 50vw;
   margin-top: 60vw;
   margin-left: 25vw;
-  transform: rotate(-20deg);
+  transform-origin: center;
+}
+.animateKamla{
+  animation: kamlaAni2 3s forwards;
+  transform-origin: center;
+}
+@keyframes kamlaAni2 {
+  0%{
+    transform: none;
+  }
+  20%{
+    transform: scale(1.5);
+  }
+  40%{
+    transform: scale(0.5);
+  }
+  60%{
+    transform: rotate(-40deg) scale(1.5);
+  }
+  80%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(2) rotate(-40deg);
+  }
 }
 
 .warning {
