@@ -40,7 +40,7 @@ export default function LandingPage({ landingToggleFun }) {
                                     <button className='manual' onClick={manualShow}>MANUAL</button>
                                 </div>
 
-                                <div className='suggestion'><span>Rotate for Best Experience</span></div>
+                                <div className='suggestion'><span>Rotate for Best Experience or Open in PC</span></div>
                             </>
                             :
                             <div className='manualPage'>

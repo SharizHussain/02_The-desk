@@ -19,6 +19,7 @@
     .suggestion{
         display: flex !important;
         justify-content: center;
+        text-align: center;
     }
     .back{
         justify-content: right !important;
