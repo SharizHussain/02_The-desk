@@ -66,6 +66,9 @@ export default function LandingPage({ landingToggleFun }) {
                                         <li>PC</li>
                                         </ul>
                                     </section>
+                                    <div className='note'>
+                                        NOTE- IF you click 4 times on the pc then after three warnings, the creepy Kamla will appear so stay careful.
+                                    </div>
                                 </div>
                                 
                                 <div className='suggestion'>Rotate for Best Experience</div>
