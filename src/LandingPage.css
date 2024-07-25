@@ -38,6 +38,11 @@
             font-size: 1.5vw !important;
         }
     }
+    @media (max-height:340px) {
+        .note{
+            margin-top: 5vw !important;
+        }
+    }
 
 .suggestion{
     position: absolute;
