@@ -149,19 +149,20 @@
 
 .hour_hand {
   height: 1.5vw;
-  width: 4px;
+  width: 0.3vw;
+  margin: 4.9vw 0 0 4.6vw;
 }
 
 .minute_hand {
   height: 1.75vw;
-  width: 2px;
+  width: 0.15vw;
   margin-top: 4.6vw !important;
 }
 
 .second_hand {
   background-color: rgb(83, 3, 3);
   height: 1.5vw;
-  width: 1.5px;
+  width: 0.1vw;
 }
 
 .lightBtn {
