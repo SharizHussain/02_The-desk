@@ -12,7 +12,7 @@
     object-fit: cover;
     object-position: bottom;
 }
-@media (max-width:600px) {
+@media (max-width:768px) {
     .gameImg{
         object-position: 90%;
     }
@@ -20,12 +20,25 @@
         display: flex !important;
         justify-content: center;
     }
+    .back{
+        justify-content: right !important;
+    }
+    h1{
+        color: rgb(53, 52, 52);
+    }
+
+    @media (max-width:768px) and (min-width:450px) {
+        section{
+            font-size: 2vw !important;
+        }
+    }
 }
 
 .suggestion{
     position: absolute;
     display: none;
-    margin: -28vh 0 0 0;
+    margin: -18vh 0 0 0;
+    color: snow;
     width: 100%;
 }
 
