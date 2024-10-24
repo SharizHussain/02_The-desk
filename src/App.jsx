@@ -6,7 +6,7 @@ import clock from './assets/pic/desk-clk.png'
 import mobileImg from './assets/pic/Deep-Purple-iPhone-14-Stock-Pro-Wallpaper-iphone-11-pro.jpg'
 import kamlaImg from './assets/pic/pic.png';
 import firstWarn from './assets/pic/HD-wallpaper-warning-computer-hop.jpg'
-import secondWarn from './assets/pic/wp2461987.png'
+import secondWarn from './assets/pic/wp2461987.png' 
 import thirdWarn from './assets/pic/cursed-hd-wallpaper-wallpaper-preview.jpg'
 import fourthWarn from './assets/pic/scary-1920X1200-wallpaper-o7c9n1g2izoywv94.jpeg'
 import treeAudio from './assets/audio/bushmovement-6986.mp3'
